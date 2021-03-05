@@ -7,5 +7,4 @@ class MainModel extends ChangeNotifier{
     kboyText = 'kboyさんかっこいい!!!';
     notifyListeners();
   }
-
 }

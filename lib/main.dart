@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_app4/main_model.dart';
+import 'package:flutter_sample_app4/add_user.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -7,8 +8,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
-  final String kboyText = 'kboyさんじゃないよ';
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,10 @@ class MyApp extends StatelessWidget {
                         'ボタン',
                       ),
                       onPressed: (){
-                        model.changeKboyText();
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => AddUser()),
+                        // );
                       },
                     ),
                   ],
