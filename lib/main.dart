@@ -35,10 +35,10 @@ class MyApp extends StatelessWidget {
                         'ボタン',
                       ),
                       onPressed: (){
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => AddUser()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AddUser()),
+                        );
                       },
                     ),
                   ],
