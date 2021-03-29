@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample_app4/main_model.dart';
 import 'package:flutter_sample_app4/add_user.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Firebase.initializeApp();
     return MaterialApp(
       title: 'Flutter Demo',
       home: ChangeNotifierProvider<MainModel>(
